@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Custom Doodletron Colors */
+  --color-doodle-orange: #f58c29;
+  --color-doodle-purple: #9250ed;
+  --color-doodle-bg: #fdeacb;
+
+  /* Custom 3D Button Shadows */
+  --shadow-button-3d: 0 4px 0 rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.15);
+  --shadow-button-3d-hover: 0 2px 0 rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-button-3d-active: 0 1px 0 rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.15);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom button animations for 3D effect */
+.btn-3d {
+  transition: all 0.1s ease-in-out;
+  transform: translateY(0);
+}
+
+.btn-3d:hover {
+  transform: translateY(-1px);
+}
+
+.btn-3d:active {
+  transform: translateY(1px);
+}
+
+/* Floating animation for decorative elements */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Delayed float for variety */
+.float-animation-delayed {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
