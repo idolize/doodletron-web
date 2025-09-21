@@ -8,7 +8,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <Image src="/logo.png" alt="Doodletron AI" width={185} height={26} className="w-auto" />
+              <Image src="/logo.png" alt="Doodletron AI" width={185} height={26} />
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="text-gray-700 hover:text-doodle-orange font-medium">
@@ -184,7 +184,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center">
             <div className="flex justify-center items-center mb-4">
-              <Image src="/logo.png" alt="Doodletron AI" width={185} height={26} className="w-auto" />
+              <Image src="/logo.png" alt="Doodletron AI" width={185} height={26} />
             </div>
             <div className="text-sm text-gray-500">
               © {new Date().getFullYear()} Idol Software. All rights reserved.
