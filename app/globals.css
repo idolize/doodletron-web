@@ -7,24 +7,100 @@
   --color-doodle-bg: #fdeacb;
 
   /* Custom 3D Button Shadows */
-  --shadow-button-3d: 0 4px 0 rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.15);
-  --shadow-button-3d-hover: 0 2px 0 rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.15);
-  --shadow-button-3d-active: 0 1px 0 rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.15);
+  --shadow-button-3d: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-button-3d-hover: 0 6px 12px rgba(0, 0, 0, 0.25), 0 3px 6px rgba(0, 0, 0, 0.15);
+  --shadow-button-3d-active: 0 2px 4px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15);
   --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-/* Custom button animations for 3D effect */
+/* SwiftUI-inspired 3D Button Styling */
 .btn-3d {
-  transition: all 0.1s ease-in-out;
+  position: relative;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(0);
+  border-radius: 9999px; /* fully rounded */
+  overflow: hidden;
+  border: none;
+  outline: none;
 }
 
+/* Orange button gradient background */
+.btn-3d-orange {
+  background: linear-gradient(to bottom, rgba(245, 140, 41, 1.1) 0%, #f58c29 50%, rgba(245, 140, 41, 0.9) 100%);
+}
+
+/* Purple button gradient background */
+.btn-3d-purple {
+  background: linear-gradient(to bottom, rgba(146, 80, 237, 1.1) 0%, #9250ed 50%, rgba(146, 80, 237, 0.9) 100%);
+}
+
+/* Hover state */
 .btn-3d:hover {
-  transform: translateY(-1px);
+  transform: translateY(-1px) scale(1.02);
 }
 
+/* Active/pressed state */
 .btn-3d:active {
-  transform: translateY(1px);
+  transform: translateY(1px) scale(0.98);
+}
+
+/* Diffused edge highlight overlay */
+.btn-3d::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 9999px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  filter: blur(1.5px);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.15) 40%,
+    rgba(255, 255, 255, 0.05) 80%,
+    transparent 100%
+  );
+  -webkit-mask: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.8) 40%,
+    rgba(255, 255, 255, 0.3) 80%,
+    transparent 100%
+  );
+  mask: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.8) 40%,
+    rgba(255, 255, 255, 0.3) 80%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+/* Active state highlight adjustment */
+.btn-3d:active::before {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Inner glow overlay */
+.btn-3d::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 9999px;
+  background: radial-gradient(ellipse 40px 40px at 30% 20%, rgba(255, 255, 255, 0.25) 0%, transparent 70%);
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+/* Pressed state inner glow adjustment */
+.btn-3d:active::after {
+  background: radial-gradient(ellipse 40px 40px at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
 }
 
 /* Floating animation for decorative elements */
@@ -46,4 +122,43 @@
 .float-animation-delayed {
   animation: float 3s ease-in-out infinite;
   animation-delay: 1.5s;
+}
+
+/* Repeating clouds background pattern */
+.clouds-background {
+  background-image: url('/clouds_small.png');
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: 530px 238px;
+  opacity: 0.5;
+
+  /* Fade out gradient mask */
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.3) 80%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.3) 80%,
+    transparent 100%
+  );
+
+  /* Subtle floating animation */
+  animation: clouds-drift 20s ease-in-out infinite;
+}
+
+/* Gentle horizontal drift animation for clouds */
+@keyframes clouds-drift {
+  0%,
+  100% {
+    background-position-x: 0px;
+  }
+  50% {
+    background-position-x: 50px;
+  }
 }
