@@ -51,12 +51,12 @@ export default function Home() {
 
             {/* Main Heading */}
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Transform Kids' Art into <span className="text-doodle-orange">AI Magic</span>
+              Transform Kids&rsquo; Art into <span className="text-doodle-orange">AI Magic</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-700 mb-12 max-w-3xl mx-auto">
-              Watch your child's drawings come to life with the power of artificial intelligence. Turn simple sketches
-              into amazing, detailed artwork!
+              Watch your child&rsquo;s drawings come to life with the power of artificial intelligence. Turn simple
+              sketches into amazing, detailed artwork!
             </p>
 
             {/* TestFlight Button */}
@@ -91,7 +91,7 @@ export default function Home() {
                     </div>
                   </div>
                   <h3 className="font-bold text-gray-900 mb-2">Original Drawing</h3>
-                  <p className="text-gray-600 text-sm">Your child's creative masterpiece</p>
+                  <p className="text-gray-600 text-sm">Your child&rsquo;s creative masterpiece</p>
                 </div>
 
                 {/* Arrow */}
@@ -144,7 +144,7 @@ export default function Home() {
                     </div>
                   </div>
                   <h3 className="font-bold text-gray-900 mb-2">Original Drawing</h3>
-                  <p className="text-gray-600 text-sm">Your child's creative masterpiece</p>
+                  <p className="text-gray-600 text-sm">Your child&rsquo;s creative masterpiece</p>
                 </div>
 
                 {/* Arrow */}
@@ -186,7 +186,9 @@ export default function Home() {
             <div className="flex justify-center items-center mb-4">
               <Image src="/logo.png" alt="Doodletron AI" width={185} height={26} className="w-auto" />
             </div>
-            <div className="text-sm text-gray-500">© 2025 Idol Software. All rights reserved.</div>
+            <div className="text-sm text-gray-500">
+              © {new Date().getFullYear()} Idol Software. All rights reserved.
+            </div>
           </div>
         </div>
       </footer>

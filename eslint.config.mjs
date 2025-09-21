@@ -1,4 +1,5 @@
 import { FlatCompat } from '@eslint/eslintrc';
+import { globalIgnores } from 'eslint/config';
 import reactCompiler from 'eslint-plugin-react-compiler';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import unusedImports from 'eslint-plugin-unused-imports';
@@ -9,6 +10,7 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  globalIgnores(['.vercel/', 'node_modules/', '.next/', '*.d.ts']),
   ...compat.config({
     extends: [
       'next/core-web-vitals',
