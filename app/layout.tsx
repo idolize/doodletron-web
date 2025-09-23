@@ -20,9 +20,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         <meta name="apple-itunes-app" content="app-id=6749167873" />
+        <meta name="theme-color" content="#fefaf4" />
         <link rel="icon" href="/icon_reg.png" />
       </head>
-      <body className="antialiased bg-doodle-bg min-h-screen">{children}</body>
+      <body className="antialiased min-h-screen bg-doodle-chrome">{children}</body>
     </html>
   )
 }
