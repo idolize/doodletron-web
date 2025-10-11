@@ -1,5 +1,7 @@
 import type { NextConfig } from 'next'
+import createMDX from '@next/mdx'
 import { setupDevPlatform } from '@cloudflare/next-on-pages/next-dev'
+import remarkGfm from 'remark-gfm'
 
 // Here we use the @cloudflare/next-on-pages next-dev module to allow us to
 // use bindings during local development (when running the application with
@@ -11,12 +13,23 @@ setupDevPlatform().catch(console.error)
 const nextConfig: NextConfig = {
   reactStrictMode: true,
 
-  pageExtensions: ['ts', 'tsx'],
+  // Cloudflare Image Optimization
+  // https://developers.cloudflare.com/images/transform-images/integrate-with-frameworks/
+  images: {
+    loader: 'custom',
+    loaderFile: './imageLoader.ts',
+  },
+
+  pageExtensions: ['md', 'mdx', 'ts', 'tsx'],
 
   turbopack: {
     rules: {
       '*.svg': {
         loaders: ['@svgr/webpack'],
+        as: '*.js',
+      },
+      '*.yaml': {
+        loaders: ['yaml-loader'],
         as: '*.js',
       },
     },
@@ -28,6 +41,14 @@ const nextConfig: NextConfig = {
       use: [
         {
           loader: '@svgr/webpack',
+        },
+      ],
+    })
+    config.module.rules.push({
+      test: /\.ya?ml$/i,
+      use: [
+        {
+          loader: 'yaml-loader',
         },
       ],
     })
@@ -44,4 +65,13 @@ const nextConfig: NextConfig = {
   // distDir: 'dist',
 }
 
-export default nextConfig
+const withMDX = createMDX({
+  // Add markdown plugins here, as desired
+  options: {
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [],
+  },
+})
+
+// Merge MDX config with Next.js config
+export default withMDX(nextConfig)
