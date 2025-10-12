@@ -14,6 +14,7 @@ export function Header() {
 
   const navigationItems = [
     { name: 'Home', href: '/' },
+    { name: 'FAQ', href: '/faq' },
     { name: 'Support', href: '/support' },
   ]
 

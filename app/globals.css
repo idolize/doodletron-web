@@ -110,6 +110,25 @@ a {
   background: radial-gradient(ellipse 40px 40px at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
 }
 
+.faq-prose {
+  a {
+    color: rgb(var(--gray-900));
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    list-style-type: square;
+    margin-left: 0.5rem;
+
+    li {
+      margin-left: 1rem;
+    }
+  }
+}
+
 /* Floating animation for decorative elements */
 @keyframes float {
   0%,

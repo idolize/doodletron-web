@@ -1,0 +1,57 @@
+questions:
+  - question: What is Doodletron AI?
+    answer: |
+      Doodletron AI is an innovative app that transforms children's drawings into amazing, detailed artwork using artificial intelligence. Simply take a photo of your child's sketch, and watch it come to life with enhanced details, colors, and artistic flair.
+
+      The app is designed to encourage creativity and imagination in kids while providing parents with a fun way to preserve and enhance their children's artwork.
+  - question: How does the AI transformation work?
+    answer: |
+      Our AI analyzes your child's drawing and understands the shapes, objects, and artistic intent. It then enhances the artwork by:
+
+      - **Adding realistic details** to simple shapes
+      - **Applying appropriate colors** and shading
+      - **Improving proportions** and artistic composition
+      - **Maintaining the original creative vision** while making it more polished
+
+      The process typically takes less than a minute, and you'll see your child's simple sketch transformed into a professional-looking piece of art.
+  - question: Is Doodletron AI safe for children?
+    answer: |
+      Absolutely! Doodletron AI is designed with children's safety and privacy in mind:
+
+      - **No personal data collection** - we don't store or share your child's photos or other information
+      - **No social features** - the app focuses purely on creativity and fun; you only see your own generated artwork
+      - **No ads** - no third-party advertising
+
+      We're committed to providing a safe, educational, and entertaining experience for families.
+  - question: What devices is Doodletron AI available on?
+    answer: |
+      Doodletron AI is currently available for **iOS devices** through TestFlight beta testing. We're working on expanding to additional platforms.
+
+      **System Requirements:**
+      - iOS 17.6 or later
+      - iPhone or iPad
+      - Internet connection for AI processing
+  - question: Can I save and share the transformed artwork?
+    answer: |
+      Yes! All your generated masterpieces are saved on your device in the "Gallery" tab. You can also easily save and share your child's AI-enhanced artwork outside of the app:
+
+      - **Save to Photos** - transformed artwork can be saved to your device's photo library
+      - **Share with family** - send the enhanced artwork to grandparents, friends, and family
+  - question: What if the AI doesn't understand my child's drawing?
+    answer: |
+      Our AI is designed to be very flexible and can handle a wide variety of drawings, from simple stick figures to more complex scenes. However, if the transformation doesn't turn out as expected:
+
+      - **Try different angles** - sometimes a slightly different photo angle helps
+      - **Ensure good lighting** - clear, well-lit photos work best
+      - **Rotate the photo** - sometimes a slightly different photo angle helps
+
+      Remember, part of the fun is seeing how the AI interprets your child's unique artistic style!
+  - question: How can I get support for Doodletron AI?
+    answer: |
+      We're here to help! You can get support in several ways:
+
+      - **In-app support** - Use the "Contact Support" button inside the app for technical issues (provides additional telemetry data)
+      - **Email support** - Contact us at [hello@doodletron.ai](mailto:hello@doodletron.ai) for general questions
+      - **Community feedback** - Share feedback and feature requests through our [feedback system](https://doodletronai.com/support)
+
+      We typically respond within 48 hours and love hearing from our users!
