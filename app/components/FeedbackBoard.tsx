@@ -8,6 +8,7 @@ const boardToken = 'f3c66293-774e-83db-a3ee-ab8a690de184'
 
 // https://developers.canny.io/install/widget/web
 export function FeedbackBoard() {
+  /* eslint-disable */
   useEffect(() => {
     ;(function (w: any, d, i, s) {
       function l() {
@@ -33,6 +34,7 @@ export function FeedbackBoard() {
               : w.addEventListener('load', l, !1))
       }
     })(window, document, 'canny-jssdk', 'script')
+    /* eslint-enable */
 
     Canny('render', {
       boardToken,

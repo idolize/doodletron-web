@@ -11,12 +11,6 @@ export function Footer() {
 
           {/* Footer Links */}
           <div className="flex flex-wrap justify-center gap-6 mb-6">
-            <a
-              href="mailto:hello@doodletron.ai"
-              className="text-gray-600 hover:text-doodle-orange font-medium transition-colors"
-            >
-              Contact Support
-            </a>
             <a href="/privacy" className="text-gray-600 hover:text-doodle-orange font-medium transition-colors">
               Privacy Policy
             </a>
