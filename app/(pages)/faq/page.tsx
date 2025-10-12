@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
 import FAQItem from '../../components/FAQItem'
@@ -39,9 +40,9 @@ export default function FAQ() {
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h1>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               Everything you need to know about Doodletron AI. Can&apos;t find what you&apos;re looking for?&nbsp;
-              <a href="/support" className="text-doodle-orange hover:text-doodle-orange/80 font-medium">
+              <Link href="/support" className="text-doodle-orange hover:text-doodle-orange/80 font-medium">
                 Contact our support team
-              </a>
+              </Link>
               .
             </p>
           </div>
@@ -77,18 +78,18 @@ export default function FAQ() {
               Our support team is here to help you get the most out of Doodletron AI.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <Link
                 href="/support"
                 className="inline-block bg-doodle-orange text-white px-6 py-3 rounded-lg font-medium hover:bg-doodle-orange/90 transition-colors"
               >
                 Contact Support
-              </a>
-              <a
-                href="https://testflight.apple.com/join/vN5NFJ9d"
+              </Link>
+              <Link
+                href="https://apps.apple.com/app/id6749167873"
                 className="inline-block border border-doodle-orange text-doodle-orange px-6 py-3 rounded-lg font-medium hover:bg-doodle-orange/10 transition-colors"
               >
-                Join TestFlight Beta
-              </a>
+                App Store
+              </Link>
             </div>
           </div>
         </div>

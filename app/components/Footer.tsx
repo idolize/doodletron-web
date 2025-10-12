@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export function Footer() {
   return (
@@ -11,18 +12,18 @@ export function Footer() {
 
           {/* Footer Links */}
           <div className="flex flex-wrap justify-center gap-6 mb-6">
-            <a href="/faq" className="text-gray-600 hover:text-doodle-orange font-medium transition-colors">
+            <Link href="/faq" className="text-gray-600 hover:text-doodle-orange font-medium transition-colors">
               FAQ
-            </a>
-            <a href="/support" className="text-gray-600 hover:text-doodle-orange font-medium transition-colors">
+            </Link>
+            <Link href="/support" className="text-gray-600 hover:text-doodle-orange font-medium transition-colors">
               Support
-            </a>
-            <a href="/privacy" className="text-gray-600 hover:text-doodle-orange font-medium transition-colors">
+            </Link>
+            <Link href="/privacy" className="text-gray-600 hover:text-doodle-orange font-medium transition-colors">
               Privacy Policy
-            </a>
-            <a href="/tos" className="text-gray-600 hover:text-doodle-orange font-medium transition-colors">
+            </Link>
+            <Link href="/tos" className="text-gray-600 hover:text-doodle-orange font-medium transition-colors">
               Terms of Service
-            </a>
+            </Link>
           </div>
 
           <div className="text-sm text-gray-500">© {new Date().getFullYear()} Idol Software. All rights reserved.</div>

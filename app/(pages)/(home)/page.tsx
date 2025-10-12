@@ -1,6 +1,8 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
+import AppleIcon from '@/app/icons/apple.svg'
 
 export default function Home() {
   return (
@@ -41,15 +43,16 @@ export default function Home() {
               sketches into amazing, detailed artwork!
             </p>
 
-            {/* TestFlight Button */}
+            {/* Download Button */}
             <div className="space-y-4">
-              <a
-                href="https://testflight.apple.com/join/vN5NFJ9d"
-                className="inline-block text-white px-8 py-4 font-bold text-lg shadow-button-3d btn-3d btn-3d-orange hover:shadow-button-3d-hover active:shadow-button-3d-active relative z-10"
+              <Link
+                href="https://apps.apple.com/app/id6749167873"
+                className="inline-flex items-center justify-center text-white px-8 py-4 font-bold text-lg shadow-button-3d btn-3d btn-3d-orange hover:shadow-button-3d-hover active:shadow-button-3d-active relative z-10"
               >
-                🎨 Try Doodletron AI on TestFlight
-              </a>
-              <p className="text-sm text-gray-600">Available for iOS • TestFlight Beta</p>
+                <AppleIcon className="w-4 h-4 mr-2" />
+                Try Doodletron AI
+              </Link>
+              <p className="text-sm text-gray-600">Available for iOS 17.6+</p>
             </div>
 
             {/* Before/After Example */}
