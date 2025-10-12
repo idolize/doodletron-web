@@ -190,7 +190,7 @@ export default function Home() {
             {/* Footer Links */}
             <div className="flex flex-wrap justify-center gap-6 mb-6">
               <a
-                href="mailto:support@doodletron.ai"
+                href="mailto:hello@doodletron.ai"
                 className="text-gray-600 hover:text-doodle-orange font-medium transition-colors"
               >
                 Contact Support
