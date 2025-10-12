@@ -1,57 +1,82 @@
-questions:
-  - question: What is Doodletron AI?
-    answer: |
-      Doodletron AI is an innovative app that transforms children's drawings into amazing, detailed artwork using artificial intelligence. Simply take a photo of your child's sketch, and watch it come to life with enhanced details, colors, and artistic flair.
+sections:
+  - name: General
+    title: General
+    questions:
+      - question: What is Doodletron AI?
+        answer: |
+          Doodletron is an AI-powered creativity app that transforms your child’s doodles into colorful, imaginative art in seconds.
 
-      The app is designed to encourage creativity and imagination in kids while providing parents with a fun way to preserve and enhance their children's artwork.
-  - question: How does the AI transformation work?
-    answer: |
-      Our AI analyzes your child's drawing and understands the shapes, objects, and artistic intent. It then enhances the artwork by:
+          Designed for parents to upload their kids' art, Doodletron makes it easy to spark creativity, build a drawing habit, and preserve every masterpiece in a private digital gallery.
+      - question: How does Doodletron work?
+        answer: |
+          Simply snap a photo of your child’s doodle or upload an existing image of a drawing in the app.
+          Doodletron instantly brings your child’s drawing to life—like turning stick figures into storybook characters or simple shapes into vivid worlds.
+      - question: Is Doodletron private and secure?
+        answer: |
+          Yes! Doodletron is designed with privacy and safety in mind. All artwork and photos stay private and secure.
 
-      - **Adding realistic details** to simple shapes
-      - **Applying appropriate colors** and shading
-      - **Improving proportions** and artistic composition
-      - **Maintaining the original creative vision** while making it more polished
+          - **No personal data collection** - we don't store or share your child's photos or other information
+          - **No social features** - the app focuses purely on creativity and fun; you only see your own generated artwork
+          - **No ads** - no third-party advertising
 
-      The process typically takes less than a minute, and you'll see your child's simple sketch transformed into a professional-looking piece of art.
-  - question: Is Doodletron AI safe for children?
-    answer: |
-      Absolutely! Doodletron AI is designed with children's safety and privacy in mind:
+          We're committed to providing a safe, educational, and entertaining experience for families.
+  - name: creativity
+    title: 🧠 Creativity & Learning
+    questions:
+      - question: How does Doodletron help kids be more creative?
+        answer: |
+          Doodletron encourages daily drawing through fun, themed prompts curated by art teachers. It helps kids explore imagination, storytelling, and artistic confidence—without pressure or perfection.
+      - question: Can Doodletron help build my child's drawing skills?
+        answer: |
+          Consistent creative play builds hand-eye coordination, visual thinking, and creative problem-solving. Doodletron helps turn practice into play, making drawing a fun daily habit with new prompts that encourage daily creation.
+      - question: What age group is Doodletron best for?
+        answer: |
+          Doodletron is designed for parents of kids who draw, but can be fun for the whole family! Parents often enjoy creating side-by-side with their children.
+  - name: saving
+    title: 💾 Saving & Sharing Art
+    questions:
+      - question: How do I save my child's AI art?
+        answer: |
+          Every creation is automatically saved to your private in-app gallery. You can download the Doodletron art you create to your device and also share generated art directly with family and friends.
+      - question: Can I print or share my child's artwork?
+        answer: |
+          Yes! You can download high-resolution versions of each artwork for printing, framing, or sharing on social media.
+      - question: What happens if I delete the app?
+        answer: |
+          If you delete the app, your private art gallery will reset. We recommend exporting all your favorite Doodletron generations to your Photo Library after creation.
+  - name: pricing
+    title: 💸 Pricing & Subscription
+    questions:
+      - question: Is Doodletron free to use?
+        answer: |
+          You can try Doodletron for free. For the full experience, upgrade to a paid plan.
+      - question: What subscription options are available?
+        answer: |
+          Doodletron offers both weekly and annual subscription options. With an annual subscription, you receive 120 generations per year, distributed as 10 credits each month—ideal for inspiring creativity all year long.
+      - question: Can I cancel anytime?
+        answer: |
+          Yes. You can cancel your subscription at any time in your App Store settings. You'll retain access until the end of your billing period.
+  - name: privacy
+    title: 🔒 Privacy & Safety
+    questions:
+      - question: Does Doodletron collect personal information?
+        answer: |
+          Doodletron complies with strict data protection standards. For details, review our [privacy policy](/privacy).
+  - name: technical
+    title: ⚙️ Technical Support
+    questions:
+      - question: What devices is Doodletron available on?
+        answer: |
+          Doodletron is currently available for **iPhone and iPad** (iOS 17.6 or later)
+      - question: The AI didn’t generate what I expected. What should I do?
+        answer: |
+          Try snapping a clearer photo or adjusting the lighting. If you need help please [contact us](/support).
+      - question: How can I get support for Doodletron AI?
+        answer: |
+          We're here to help! You can get support in several ways:
 
-      - **No personal data collection** - we don't store or share your child's photos or other information
-      - **No social features** - the app focuses purely on creativity and fun; you only see your own generated artwork
-      - **No ads** - no third-party advertising
+          - **In-app support** - Use the "Contact Support" button inside the app for technical issues (provides additional telemetry data)
+          - **Email support** - Contact us at [hello@doodletron.ai](mailto:hello@doodletron.ai) for general questions
+          - **Community feedback** - Share feedback and feature requests through our [feedback system](/support)
 
-      We're committed to providing a safe, educational, and entertaining experience for families.
-  - question: What devices is Doodletron AI available on?
-    answer: |
-      Doodletron AI is currently available for **iOS devices** through TestFlight beta testing. We're working on expanding to additional platforms.
-
-      **System Requirements:**
-      - iOS 17.6 or later
-      - iPhone or iPad
-      - Internet connection for AI processing
-  - question: Can I save and share the transformed artwork?
-    answer: |
-      Yes! All your generated masterpieces are saved on your device in the "Gallery" tab. You can also easily save and share your child's AI-enhanced artwork outside of the app:
-
-      - **Save to Photos** - transformed artwork can be saved to your device's photo library
-      - **Share with family** - send the enhanced artwork to grandparents, friends, and family
-  - question: What if the AI doesn't understand my child's drawing?
-    answer: |
-      Our AI is designed to be very flexible and can handle a wide variety of drawings, from simple stick figures to more complex scenes. However, if the transformation doesn't turn out as expected:
-
-      - **Try different angles** - sometimes a slightly different photo angle helps
-      - **Ensure good lighting** - clear, well-lit photos work best
-      - **Rotate the photo** - sometimes a slightly different photo angle helps
-
-      Remember, part of the fun is seeing how the AI interprets your child's unique artistic style!
-  - question: How can I get support for Doodletron AI?
-    answer: |
-      We're here to help! You can get support in several ways:
-
-      - **In-app support** - Use the "Contact Support" button inside the app for technical issues (provides additional telemetry data)
-      - **Email support** - Contact us at [hello@doodletron.ai](mailto:hello@doodletron.ai) for general questions
-      - **Community feedback** - Share feedback and feature requests through our [feedback system](https://doodletronai.com/support)
-
-      We typically respond within 48 hours and love hearing from our users!
+          We typically respond within 48 hours and love hearing from our users!

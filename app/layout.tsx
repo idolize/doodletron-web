@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Doodletron AI: Transform Kids' Art into AI Magic",
     description: "Turn your child's drawings into amazing AI-generated artwork!",
-    images: ['/logo.png'],
+    images: ['/favicon-96x96.png'],
   },
 }
 

@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
 import FAQItem from '../../components/FAQItem'
@@ -8,11 +9,21 @@ interface FAQItemType {
   answer: string
 }
 
-interface FAQData {
+interface FAQSection {
+  name: string
+  title: string
   questions: FAQItemType[]
 }
 
-const questions: FAQItemType[] = (faqData as FAQData).questions
+interface FAQData {
+  sections: FAQSection[]
+}
+
+export const metadata: Metadata = {
+  title: 'FAQ - Doodletron AI',
+}
+
+const sections: FAQSection[] = (faqData as FAQData).sections
 
 export default function FAQ() {
   return (
@@ -35,9 +46,27 @@ export default function FAQ() {
             </p>
           </div>
 
-          <div className="space-y-4">
-            {questions.map((faq: FAQItemType, index: number) => (
-              <FAQItem key={index} question={faq.question} answer={faq.answer} defaultOpen={index === 0} />
+          <div className="space-y-12">
+            {sections.map((section: FAQSection, sectionIndex: number) => (
+              <div key={section.name} className="space-y-6">
+                {/* Section Header */}
+                <div className="text-center">
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">{section.title}</h2>
+                  <div className="w-16 h-1 bg-doodle-orange mx-auto rounded-full"></div>
+                </div>
+
+                {/* Section Questions */}
+                <div className="space-y-4">
+                  {section.questions.map((faq: FAQItemType, questionIndex: number) => (
+                    <FAQItem
+                      key={`${section.name}-${questionIndex}`}
+                      question={faq.question}
+                      answer={faq.answer}
+                      defaultOpen={sectionIndex === 0 && questionIndex === 0}
+                    />
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
 

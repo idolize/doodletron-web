@@ -1,7 +1,12 @@
+import { Metadata } from 'next'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
 import { FeedbackBoard } from '../../components/FeedbackBoard'
 import { ContactSupportButton } from '../../components/ContactSupportButton'
+
+export const metadata: Metadata = {
+  title: 'Support - Doodletron AI',
+}
 
 export default function Support() {
   return (
