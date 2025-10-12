@@ -51,7 +51,7 @@ export function ContactSupportButton() {
                 </div>
                 <div className="ml-3">
                   <p className="text-sm text-blue-800">
-                    <strong>For bugs or technical issues:</strong> Please use the "Contact Support" button inside the
+                    <strong>For bugs or technical issues:</strong> Please use the &quot;Contact Support&quot; button inside the
                     Doodletron AI app. This provides additional telemetry data that helps us diagnose issues faster.
                   </p>
                 </div>
