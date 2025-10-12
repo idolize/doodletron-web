@@ -2,7 +2,15 @@
 
 import React, { useEffect } from 'react'
 
-declare const Canny: (method: string, options: any) => void
+declare const Canny: (
+  method: string,
+  options: {
+    boardToken: string
+    basePath: `/${string}`
+    theme: 'light' | 'dark' | 'auto'
+    ssoToken: string | null // for sharing user session with the app itself
+  }
+) => void
 
 const boardToken = 'f3c66293-774e-83db-a3ee-ab8a690de184'
 
@@ -39,8 +47,8 @@ export function FeedbackBoard() {
     Canny('render', {
       boardToken,
       basePath: '/support',
+      theme: 'light',
       ssoToken: null,
-      theme: 'light', // options: light [default], dark, auto
     })
   }, [])
 

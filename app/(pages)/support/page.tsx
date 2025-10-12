@@ -1,6 +1,7 @@
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
 import { FeedbackBoard } from '../../components/FeedbackBoard'
+import { ContactSupportButton } from '../../components/ContactSupportButton'
 
 export default function Support() {
   return (
@@ -15,7 +16,7 @@ export default function Support() {
           <div className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Support Center</h1>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              Need help with Doodletron AI? We're here to assist you with any questions or issues you might have.
+              Need help with Doodletron AI? We&apos;re here to assist you with any questions or issues you might have.
             </p>
           </div>
 
@@ -37,12 +38,7 @@ export default function Support() {
                 <p className="text-gray-600 mb-6">
                   Get direct help from our support team. We typically respond within 48 hours.
                 </p>
-                <a
-                  href="mailto:hello@doodletron.ai"
-                  className="inline-block bg-doodle-orange text-white px-6 py-3 rounded-lg font-medium hover:bg-doodle-orange/90 transition-colors"
-                >
-                  Contact Support
-                </a>
+                <ContactSupportButton />
               </div>
             </div>
 
