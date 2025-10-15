@@ -19,8 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        {/* TODO: Uncomment this when the app is ready for App Store */}
-        {/* <meta name="apple-itunes-app" content="app-id=6749167873" /> */}
+        <meta name="apple-itunes-app" content="app-id=6749167873" />
         <meta name="theme-color" content="#fefaf4" />
         <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
       </head>
