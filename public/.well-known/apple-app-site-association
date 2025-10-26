@@ -1,0 +1,27 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "599G9R4TT4.com.doodletronai.Doodletron"
+        ],
+        "components": [
+          {
+            "#": "web-only",
+            "exclude": true,
+            "comment": "Matches any URL with a fragment that equals web-only and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "/promo/*",
+            "comment": "Opens promo pages in the app."
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "599G9R4TT4.com.doodletronai.Doodletron"
+    ]
+  }
+}

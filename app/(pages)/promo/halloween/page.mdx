@@ -1,0 +1,39 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import AppleIcon from '@/app/icons/apple.svg'
+
+export default function HalloweenPromo() {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-purple-50 flex items-center justify-center px-4 py-12">
+      <div className="max-w-2xl mx-auto text-center">
+        <div className="flex justify-center mb-8">
+          <Image
+            src="/doodleman-floor.png"
+            alt="Doodley"
+            width={300}
+            height={300}
+            quality={100}
+          />
+        </div>
+
+        {/* Fun Halloween Message */}
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+          🎃 Happy Halloween! 🎃
+        </h1>
+
+        <p className="text-xl md:text-2xl text-gray-800 mb-8 leading-relaxed">
+          Doodley has a spooktacular mission for you. Draw the ultimate creative Halloween parade and bring it to life with AI!
+        </p>
+
+        <Link
+          href="https://apps.apple.com/app/id6749167873"
+          className="inline-flex items-center justify-center text-white px-8 py-4 font-bold text-lg shadow-button-3d btn-3d btn-3d-orange hover:shadow-button-3d-hover active:shadow-button-3d-active"
+        >
+          <AppleIcon className="w-4 h-4 mr-2" />
+          Get the App
+        </Link>
+      </div>
+    </div>
+
+)
+}
